@@ -1,0 +1,48 @@
+---
+import CockroachLabsLogo from '../components/cockroach-labs-logo.astro';
+import '../styles/tailwind.css';
+
+const { title } = Astro.props;
+
+import '@fontsource/poppins/100.css';
+import '@fontsource/poppins/200.css';
+import '@fontsource/poppins/300.css';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
+import '@fontsource/poppins/800.css';
+import '@fontsource/poppins/900.css';
+import '@fontsource/roboto/100.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import '@fontsource/roboto/900.css';
+---
+
+<html lang='en'>
+  <head>
+    <title>{title}</title>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='icon' type='image/x-icon' href={`${import.meta.env.SITE}/favicon.ico`} />
+    <link rel='icon' type='image/png' sizes='16x16' href={`${import.meta.env.SITE}/favicon-16x16.png`} />
+    <link rel='icon' type='image/png' sizes='32x32' href={`${import.meta.env.SITE}/favicon-32x32.png`} />
+  </head>
+  <body>
+    <header class='fixed w-full shadow z-50'>
+      <nav class='w-full mx-auto max-w-7xl'>
+        <div class='relative flex bg-white p-4'>
+          <a href='https://www.cockroachlabs.com/' target='_blank' rel='noreferrer'>
+            <CockroachLabsLogo />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class='prose px-4 py-24 w-full mx-auto max-w-7xl'>
+      <slot />
+    </main>
+    <footer class='w-full'></footer>
+  </body>
+</html>
