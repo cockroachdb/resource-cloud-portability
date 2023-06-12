@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: PUBLIC_SEO_URL,
-  base: PUBLIC_BASE_PATH,
+  base: '/resources/resource-cloud-portability',
   integrations: [
     tailwind({
       config: {
