@@ -5,7 +5,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://www.cockroachlabs.com/resources/resource-cloud-portability',
+  site: 'https://www.cockroachlabs.com/resources/resource-cloud-portability/',
   base: '/resources/resource-cloud-portability',
   integrations: [
     tailwind({
